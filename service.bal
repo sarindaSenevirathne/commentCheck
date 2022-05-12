@@ -16,6 +16,8 @@ service / on new http:Listener(9090) {
             log:printInfo("name is empty");
             return error("name should not be empty!");
         }
+
+        //this is the comment added through the local machine
         return "Hello, " + name;
     }
 }
